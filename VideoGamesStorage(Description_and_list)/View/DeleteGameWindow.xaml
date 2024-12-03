@@ -1,0 +1,21 @@
+﻿<Window x:Class="VideoGamesStorage_Description_and_list_.View.DeleteGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoGamesStorage_Description_and_list_.View"
+        mc:Ignorable="d" WindowStartupLocation="CenterOwner"
+        Title="DeleteGameWindow" Height="90" Width="850" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="_gameToSearch" Margin="5"  Height="40" Width="330" Text="{Binding Name}"/>
+            <Button x:Name="_search" Margin="5" Content="Search" FontSize="20"  Height="40" Width="150" Click="_search_Click"/>
+            <Button x:Name="_delete" Margin="5" Content="Delete" FontSize="20" Height="40" Width="150" IsEnabled="False" Click="_delete_Click"/>
+            <Button x:Name="_cancel" Margin="5" Content="Cancel" FontSize="20"  Height="40" Width="150" Click="_cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
